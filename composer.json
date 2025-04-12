@@ -19,18 +19,26 @@
             "role": "Developer"
         }
     ],
-    "repositories": [
-        {
-        "type": "vcs",
-        "url": "https://github.com/aboobakurusuheyl/laravel-revisor.git"
+    "repositories": {
+        "laravel-revisor": {
+            "type": "package",
+            "package": {
+                "name": "aboobakurusuheyl/laravel-revisor",
+                "version": "1.0",
+                "source": {
+                    "url": "https://github.com/aboobakurusuheyl/laravel-revisor.git",
+                    "type": "git",
+                    "reference": "origin/main"
+                }
+            }
         }
-    ],
+    },
     "require": {
         "php": "^8.2",
         "filament/filament": "^3.0",
         "spatie/laravel-package-tools": "^1.16",
         "illuminate/contracts": "^11.0||^12.0",
-        "aboobakurusuheyl/laravel-revisor": "dev-main"
+        "aboobakurusuheyl/laravel-revisor": "1.0"
     },
     "require-dev": {
         "barryvdh/laravel-ide-helper": "^3.1",
